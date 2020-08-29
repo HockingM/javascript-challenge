@@ -1,36 +1,46 @@
 // from data.js
 var tableData = data;
 
-// Select the button
+// get a reference to the table body
+var tbody = d3.select("tbody");
+
+// select the button
 var button = d3.select("#filter-btn");
 
-// Select the form
+// select the form
 var form = d3.select("#form");
 
-// Create event handlers 
+// create event handlers 
 button.on("click", filterTable);
 form.on("submit", filterTable);
 
-// Complete the event handler function for the form
+// complete the event handler function for the form
 function filterTable() {
-
-  // Prevent the page from refreshing
-  d3.event.preventDefault();
   
-  // Select the input element and get the raw HTML node
-  var inputElement = d3.select("#datetime");
+  // refresh table ie remove child data from node
+  tbody.html("");
+  // prevent the page from refreshing
+  d3.event.preventDefault();
 
-  // Get the value property of the input element
-  var inputValue = inputElement.property("value");
+  // select the input element and get the raw HTML node
+  var dateElement = d3.select("#datetime");
 
-  console.log(inputValue);
-  console.log(tableData);
+  // get the value property of the input element
+  var dateValue = dateElement.property("value");
 
-  var filteredData = tableData.filter(date => (date.datetime) === inputValue);
+  // console.log(inputValue);
+  // console.log(tableData);
 
-  console.log(filteredData);
+  // filter the data for the input element matches
+  var ufoReports = tableData.filter(row => (row.datetime) === dateValue);
 
-  // create an array with just the city values
-    var city = filteredData.map(date => date.city);
-    console.log(city);
-};
+  ufoReports.forEach(function (ufoReport) {
+    // console.log(ufoReports);
+    var row = tbody.append("tr");
+    Object.entries(ufoReport).forEach(function ([key, value]) {
+      console.log(key, value);
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+}
