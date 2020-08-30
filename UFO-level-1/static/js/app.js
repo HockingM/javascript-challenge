@@ -16,7 +16,7 @@ form.on("submit", filterTable);
 
 // complete the event handler function for the form
 function filterTable() {
-  
+
   // refresh table ie remove child data from node
   tbody.html("");
   // prevent the page from refreshing
@@ -32,12 +32,12 @@ function filterTable() {
   // console.log(tableData);
 
   // filter the data for the input element matches
-  var ufoReports = tableData.filter(row => (row.datetime) === dateValue);
+  var ufoResults = tableData.filter(row => (row.datetime) === dateValue);
 
-  ufoReports.forEach(function (ufoReport) {
-    // console.log(ufoReports);
+  ufoResults.forEach(function (ufoResult) {
+    // console.log(ufoResult);
     var row = tbody.append("tr");
-    Object.entries(ufoReport).forEach(function ([key, value]) {
+    Object.entries(ufoResult).forEach(function ([key, value]) {
       console.log(key, value);
       var cell = row.append("td");
       cell.text(value);
