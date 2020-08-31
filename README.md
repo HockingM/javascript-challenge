@@ -25,16 +25,28 @@ Across both solutions, simple string validation is done (trimming and converted 
 ### Contributors:
 Michelle Hocking
 
+$ ./javascript-challenge .
 # Project tree
 
 .
+ * [javascript-challenge](./javascript-challenge)
  * [UFO-level-1](./UFO-level-1)
    * [static](./UFO-level-1/static)
-    * [css](./UFO-level-1/static/css)
-    * [images](.UFO-level-1/static/images)
-     * [nasa.jpg](./UFO-level-1/static/images/nasa.jpeg)
-     * [ufo.svg](./UFO-level-1/static/imagesufo.svg)
-    * [js](./UFO-level-1/static/js)
-     * [app.js](./UFO-level-1/static/js/app.js)
-     * [data.js](./UFO-level-1/static/js/data.js)
+      * [css](./UFO-level-1/static/css)
+      * [images](.UFO-level-1/static/images)
+        * [nasa.jpg](./UFO-level-1/static/images/nasa.jpeg)
+        * [ufo.svg](./UFO-level-1/static/images/ufo.svg)
+      * [js](./UFO-level-1/static/js)
+        * [app.js](./UFO-level-1/static/js/app.js)
+        * [data.js](./UFO-level-1/static/js/data.js)
    * [index.html](./UFO-level-1/index.html)
+ * [UFO-level-2](./UFO-level-2)
+   * [static](./UFO-level-2/static)
+      * [css](./UFO-level-2/static/css)
+      * [images](.UFO-level-2/static/images)
+        * [nasa.jpg](./UFO-level-2/static/images/nasa.jpeg)
+        * [ufo.svg](./UFO-level-2/static/images/ufo.svg)
+      * [js](./UFO-level-1/static/js)
+        * [app.js](./UFO-level-2/static/js/app.js)
+        * [data.js](./UFO-level-2/static/js/data.js)
+   * [index.html](./UFO-level-2/index.html)
