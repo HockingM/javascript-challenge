@@ -18,20 +18,23 @@ Building on the solution developed in Level 1, the filter options were extended 
 + country
 + shape
 
-Using multiple input tags so the user can to set multiple filters, a search is done that  and search for UFO sightings using the following criteria based on the table columns:
+Users can set multiple filters to search for UFO sightings, up to a maximum of 5, being all filters available.
 
+Across both solutions, simple string validation is done (trimming and converted to lower case) on all inputs with the exception of the date field.
 
 ### Contributors:
 Michelle Hocking
 
-$ ./javascript-challenge .
 # Project tree
 
 .
- * [UFO-level-1](./javascript-challenge)
  * [UFO-level-1](./UFO-level-1)
    * [static](./UFO-level-1/static)
-      * [css](./UFO-level-1/static/css)
-      * [images](.UFO-level-1/static/images)
-      * [js](./UFO-level-1/static/js)
+    * [css](./UFO-level-1/static/css)
+    * [images](.UFO-level-1/static/images)
+     * [nasa.jpg](./UFO-level-1/static/images/nasa.jpeg)
+     * [ufo.svg](./UFO-level-1/static/imagesufo.svg)
+    * [js](./UFO-level-1/static/js)
+     * [app.js](./UFO-level-1/static/js/app.js)
+     * [data.js](./UFO-level-1/static/js/data.js)
    * [index.html](./UFO-level-1/index.html)
