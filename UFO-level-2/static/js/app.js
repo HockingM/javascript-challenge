@@ -54,7 +54,7 @@ function filterTable() {
     if (filterElements[i] !== "") {
       filterValues[dataKeys[i]] = filterElements[i];
     };
-  }
+  };
   //console.log(filterValues);
 
   // filter data using array and search function
@@ -64,7 +64,7 @@ function filterTable() {
   // use keys in array to filter tableData and return results to ufoResults array
   function search(tableData) {
     return (Object.keys(this).every((key) => tableData[key] === this[key]));
-  }
+  };
 
   // update table values
   ufoResults.forEach(function (ufoResult) {
@@ -74,5 +74,5 @@ function filterTable() {
       var cell = row.append("td");
       cell.text(value);
     });
-  })
+  });
 };
